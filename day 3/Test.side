@@ -1,0 +1,62 @@
+{
+  "id": "405341a8-169e-44af-88a7-9ecb36dce604",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "441e559e-e5eb-4a75-9a12-13d903654ca5",
+    "name": "Day3.1",
+    "commands": [{
+      "id": "41f87010-75a9-457f-b766-b680224f84f4",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2347fc87-66c4-4db4-9088-51d6a084e358",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "392be1b0-6ba3-45e3-b475-18606378d889",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.nav-item:nth-child(1) li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20_27')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "310a2180-b255-4e02-966a-d70d5693af5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.image .img-fluid",
+      "targets": [
+        ["css=.image .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='iMac']", "xpath:img"],
+        ["xpath=//div[@id='product-list']/div/form/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//form/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "64174988-f731-4bfb-9ecd-6c05dff503d8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["441e559e-e5eb-4a75-9a12-13d903654ca5"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
